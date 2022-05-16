@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Login - Proyecto front-end MA'punto</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="contact_form">
+        <div class="formulario">
+            <form action="http://192.168.56.102/login.php" method="post" name="signin-form">
+                <p>
+                    <label for="username" class="username">Username</label>
+                    <input type="text" name="correo" id="correo" placeholder="Escribe un nombre de usuario válido" 
+                    pattern="([a-zA-Z0-9]([^ @&%$\\\/()=?¿!.,:;]?|\d?)+[a-zA-Z0-9][\.]){1,2}" required>
+                </p>
+                <p>
+                    <label for="apellidos" class="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Escribe una contraseña válida" required>
+                </p>
+                <button type="submit" name="signin" id="signin" onclick="send()">
+                    <p>Sign in</p>
+                </button>
+                <a href="registrar.html">Registrarse como nuevo usuario</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página principal - Proyecto front-end MA'punto</title>
+    <link rel="stylesheet" type="text/css" href="css/estiloprincipal.css">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <script src="js/apuntarse.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body onload="cargaUsuario()">
+    <header>
+        <nav>
+            <ul>
+                <div id="userclose">
+                </div>
+                <a href="index.html" class="cerrar" onclick="cerrar()">Cerrar sesion</a><br/>
+                <li><a href="verreservas.html">Ver reservas</a></li>
+                <li><a href="apuntarse.html">¡Me apunto!</a></li>
+                <li><a href="perfil.html">Perfil de usuario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="http://192.168.56.102/realizarReserva.php" method="post" name="reserva-form">
+            <label for="eleccion" class="eleccion">Elige fecha y hora:</label>
+            <select id="miSelect" class="seleccion">
+
+            </select>
+            <button type="submit" name="reservar" id="reservar" onclick="reserva()">
+                <p>Confirmar reserva</p>
+            </button>
+
+        </form>
+    </main>
+</body>
+
+</html>

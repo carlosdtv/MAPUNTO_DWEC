@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: "Noto Sans", sans-serif;
+    background-color: #bdffe0;
+    background-image: url("/img/padel.jpg");
+    background-size: 80rem;
+  }
+
+nav {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background-color: aquamarine;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 2rem;
+}
+
+a {
+    color:rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(213, 25, 25,1);
+}
+
+input {
+    outline: 0;
+    background-color: #fbfbfb;
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #14b814;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  select {
+    outline: 0;
+    background-color: #fbfbfb;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #14b814;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+input:hover {
+    background-color: #c8c8c8;
+}
+
+button {
+    height: 45px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #14b814;
+    border-color: #14b814;
+    border-style: solid;
+    border-radius: 10px;
+    width: 95%;
+    cursor: pointer;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  form {
+    width: 500px;
+    margin: 10px auto;
+  }
+  form {
+    width: 600px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 30px;
+  }
+
+  .cerrar {
+      float:right;
+      font-size: 14px;
+      display:inline-block;
+  }
+
+  #userclose {
+      float:left;
+      font-size: 14px;
+      display: inline-block;
+  }
+
+   tr, th, td {
+    border: black 2px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: aliceblue;
+  }
+
+  .tablaReservas {
+    font-size: 25px;;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  #miSelect {
+    outline: 0;
+    background-color: #fbfbfb;
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #14b814;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 10px black;
+  }
+
+  .reservada {
+    background-color: red;
+  }

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo usuario - Proyecto front-end MA'punto</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <script src="js/registrar.js"></script>
+</head>
+
+<body>
+    <div class="contact_form">
+        <div class="formulario">
+            <form action="http://192.168.56.102/registrar.php" method="post" name="registrar-form">
+                <p>
+                    <label for="dni" class="dni">DNI</label>
+                    <input type="text" name="dni" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" title="DNI válido - 8 dígitos enteros + 1 letra">
+                </p>
+                <p>
+                    <label for="nombre" class="nombre">Nombre</label>
+                    <input type="text" name="introducir_nombre" id="nombre" maxlength="100">
+                </p>
+                <p>
+                    <label for="apellidos" class="apellidos">Apellidos</label>
+                    <input type="text" name="introducir_apellidos" id="apellidos" maxlength="100">
+                </p>
+                <p>
+                    <label for="direccion" class="direccion">Dirección</label>
+                    <input type="text" name="direccion" id="direccion" maxlength="100">
+                </p>
+                <p>
+                    <label for="telefono" class="telefono">Teléfono</label>
+                    <input type="text" name="introducir_telefono" id="telefono" pattern="[0-9]{9}" title="Número de teléfono - 9 dígitos enteros">
+                </p>
+                <label for="genr">Género</label>
+                <select name="genero" id="genero">
+                    <option value="Hombre">Hombre</option>
+                    <option value="Mujer">Mujer</option>
+                </select>
+                <p>
+                    <label for="fechanac" class="fechanac">Fecha de nacimiento</label>
+                    <input type="text" name="fecha" id="fecha" title="Fecha de nacimiento - aaaa-mm-dd" pattern="^\d{4}([\-/.])(0?[1-9]|1[1-2])\1(3[01]|[12][0-9]|0?[1-9])$">
+                </p>
+                <p>
+                    <label for="correo" class="correo">Correo electrónico</label>
+                    <input type="text" name="correo" id="correo" title="Correo electrónico - xxxx@xxx.xx[x]" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </p>
+                <label for="nivel">Nivel de juego</label>
+                <select name="nivel" id="nivel">
+                    <option value="Iniciacion">Iniciacion</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                    <option value="Competicion">Competicion</option>
+                    <option value="Profesional">Profesional</option>
+                </select><br/>
+                <label for="preferencia">Preferencia</label>
+                <select name="preferencia" id="preferencia">
+                    <option value="Mismo genero">Mismo genero</option>
+                    <option value="Mixto">Mixto</option>
+                    <option value="Indiferente">Indiferente</option>
+                </select>
+                <p>
+                    <label for="descripcion" class="descripcion">Descripción</label>
+                    <input type="text" name="descripcion" id="descripcion" maxlength="255">
+                </p>
+                <p>
+                    <label for="pass1" class="pass1">Contraseña</label>
+                    <input type="password" name="pass1" id="pass1" maxlength="255">
+                </p>
+                <p>
+                    <label for="pass2" class="pass2">Repite contraseña</label>
+                    <input type="password" name="pass2" id="pass2" maxlength="255">
+                </p>
+                <button type="submit" name="registrar" id="registrar" onclick="send()">
+                    <p>Registrar usuario</p>
+                </button>
+                <a href="index.html">Volver</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
